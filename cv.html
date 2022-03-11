@@ -41,10 +41,38 @@
       border: none;
     }
   </style>
+  
+  <style>
+.alert {
+  padding: 20px;
+  background-color: #009933;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
 
 </head>
 
 <body class="w3-light-grey">
+  
+  <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong></strong> You are viewing my CV in public mode. Please reach via e-mail for more information.
+</div>
 
   <!-- Page Container -->
   <div class="w3-content w3-margin-top" style="max-width:1400px;">
